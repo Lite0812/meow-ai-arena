@@ -17,4 +17,6 @@
 评测输出放在 `runs/`。开始比赛前会保存候选、对手与引擎指纹，
 并固定所有源码；修改源码应使用新输出目录。任何超时、格式错误和判负都保留在主统计中。
 
-当前提交仍处于开发扩样阶段，独立验收尚未启动。
+当前提交已冻结为 `e733d847…`，500 场独立单挑验收已启动，随后运行同一源码的 80 场四人测试。
+启动前参数见 [PRELAUNCH.md](PRELAUNCH.md) 与 [FINAL_LAUNCH.json](FINAL_LAUNCH.json)，
+成绩状态见 [REPORT.md](../../workspace/submission/REPORT.md)。

@@ -1,0 +1,44 @@
+{
+  "frozen_at_utc": "2026-10-19T07:36:31.057224+00:00",
+  "source_commit": "619dfa45ac298952527f2e933f797f188fa5712e",
+  "source_sha256": "e733d847add9fa443a6c8a492c6162f3df41b033b5474a0c1732f15a2ab25224",
+  "benchmark_sha256": "d9b9c558481ba095d34765ca646c1413aa0ca56ae2307015aa77516af0e91cd7",
+  "candidate": "candidate",
+  "frozen_source": "land/analysis/domination/frozen/final.cpp",
+  "submission_source": "land/workspace/submission/bot.cpp",
+  "duel": {
+    "mode": "duel",
+    "opponents": [
+      "sonnet",
+      "community",
+      "sparring",
+      "opus",
+      "astra"
+    ],
+    "maps": 50,
+    "split": "acceptance",
+    "seed_base": 0,
+    "jobs": 1,
+    "replay_maps": 50,
+    "expected_games": 500,
+    "out": "land/analysis/domination/runs/final_acceptance_duel_e733d847"
+  },
+  "melee": {
+    "mode": "melee",
+    "opponents": [
+      "sonnet",
+      "community",
+      "astra"
+    ],
+    "maps": 20,
+    "split": "acceptance",
+    "seed_base": 0,
+    "jobs": 1,
+    "replay_maps": 20,
+    "expected_games": 80,
+    "out": "land/analysis/domination/runs/final_acceptance_melee_e733d847"
+  },
+  "execution_policy": "Run duel then melee, one benchmark at a time; all agents confirmed no matches, compilers or sustained CPU probes. No source, maps, opponents, sample size or stopping-rule changes during acceptance. Preserve every fault and replay.",
+  "criterion": "Each duel opponent separately requires strict observed wins above 80%; draws are nonwins; report all-game results, opponent-fault sensitivity floor and existing extra zero-fault/interval gates separately. N4 unique-first results reported separately.",
+  "seed_information_barrier": "No acceptance seeds generated, read or used for tuning before this record."
+}
