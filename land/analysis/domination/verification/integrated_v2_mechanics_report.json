@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "states": 225,
+  "duel_states": 171,
+  "action_pairs": 1539,
+  "reset_states": 60,
+  "reset_paths": 472,
+  "failures": 0,
+  "home_triggered_states": 2,
+  "home_overrides": 1,
+  "coverage": {
+    "capture_branches": 422,
+    "protected_capture_attempts": 60,
+    "death_self": 9,
+    "simultaneous_captures": 21,
+    "competing_enclosure_claims": 1,
+    "trail_over_enclosure_priority": 2,
+    "death_cut": 3,
+    "death_head": 6,
+    "death_wall": 198,
+    "reset_wall": 318,
+    "reset_capture_before_death": 122,
+    "reset_positive_secured_value": 122,
+    "reset_self": 154
+  },
+  "source": "/workspace/scratch/95e97da70795/arena/land/analysis/domination/candidate_integrated_v2.cpp",
+  "engine": "/workspace/scratch/95e97da70795/arena/land/workspace/engine/game.py",
+  "sha256": {
+    "source": "389ca4968e245f417b2137a32fcfd12bc74e03d790296934fb768455601ab06d",
+    "engine": "ece554e42b7536d36d845d77da6c03a1f4f9f5adb24cb43fd027e9104bd4d908",
+    "fixtures": "1a652ac2b0eade020190ca29a19f9bad88cb5ec4e08628f393a510d46bd6ea3a",
+    "probe": "c394d2bec34c4c252a733ec94339784e4c7807bebcde086e4cfc4394dc12c9fe"
+  },
+  "engine_sha256_when_fixtures_packed": "ece554e42b7536d36d845d77da6c03a1f4f9f5adb24cb43fd027e9104bd4d908",
+  "compiler": "g++",
+  "flags": [
+    "-O2",
+    "-std=c++20"
+  ],
+  "elapsed_seconds": 5.709,
+  "scope": "Frozen state mechanics checked with original Game.step; no full games or strength claims.",
+  "home_rescues": [
+    {
+      "state": "state-007",
+      "labels": [
+        "synthetic/reject-home-return-with-one-sided-trail-cut"
+      ],
+      "pairs": 9,
+      "triggered": true,
+      "overridden": false,
+      "selected": "D",
+      "original": "D",
+      "worst": {
+        "D": -2,
+        "L": -2,
+        "R": -2
+      },
+      "admissible": {
+        "L": false
+      }
+    },
+    {
+      "state": "state-018",
+      "labels": [
+        "stability_v1/replays/sonnet__seed-657045523__rot-1.json/turn-207"
+      ],
+      "pairs": 9,
+      "triggered": true,
+      "overridden": true,
+      "selected": "L",
+      "original": "D",
+      "worst": {
+        "U": 174,
+        "D": -199,
+        "L": 123
+      },
+      "admissible": {
+        "L": true
+      }
+    }
+  ],
+  "failure_details": []
+}

@@ -1,0 +1,10 @@
+/runs/
+/frozen/
+/candidate*.cpp
+/audit_*.cpp
+/eval_*.cpp
+/*.inc
+/*_probe.bin
+/*_probe
+/__pycache__/
+/verification/*-build-*/

@@ -1,0 +1,449 @@
+{
+  "passed": true,
+  "mechanics_states": 225,
+  "action_pairs": 2025,
+  "capture": 449,
+  "death_self": 9,
+  "simultaneous_capture_branches": 21,
+  "competing_enclosure_claims": 1,
+  "death_cut": 6,
+  "death_head": 8,
+  "death_wall": 234,
+  "brute_Game.step_calls": 4599,
+  "root_choices": 48,
+  "ties_preserving_original": 25,
+  "strict_improvement_choices": 23,
+  "search_states": 16,
+  "expired_root_choices": 144,
+  "midsearch_aborts": 48,
+  "failures": 0,
+  "source": "/workspace/scratch/95e97da70795/arena/land/analysis/domination/candidate_integrated_v2.cpp",
+  "engine": "/workspace/scratch/95e97da70795/arena/land/workspace/engine/game.py",
+  "sha256": {
+    "source": "389ca4968e245f417b2137a32fcfd12bc74e03d790296934fb768455601ab06d",
+    "engine": "ece554e42b7536d36d845d77da6c03a1f4f9f5adb24cb43fd027e9104bd4d908",
+    "fixtures": "1a652ac2b0eade020190ca29a19f9bad88cb5ec4e08628f393a510d46bd6ea3a",
+    "terminal_fixtures": "f24a51bff5ece462fa2bcb7c7f86c4af27d599bc5550e5ddf306f3d22ec88eef",
+    "probe": "d5889047ad50966dd1eb8a7f376fd89663ca61780957fe6729ff34c96da8a8d0"
+  },
+  "elapsed_seconds": 3.239,
+  "search_cases": [
+    {
+      "id": "corner/state-006",
+      "depth": 2,
+      "value": 9,
+      "worst": {
+        "U": -153,
+        "L": -153,
+        "R": 9
+      },
+      "predicted_value": 9,
+      "choices": {
+        "U": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 33
+    },
+    {
+      "id": "corner/state-007",
+      "depth": 3,
+      "value": -2,
+      "worst": {
+        "D": -2,
+        "L": -2,
+        "R": -4
+      },
+      "predicted_value": -2,
+      "choices": {
+        "D": {
+          "chosen": "D",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "D",
+          "aborted": 0
+        }
+      },
+      "nodes": 121
+    },
+    {
+      "id": "corner/state-018",
+      "depth": 1,
+      "value": 174,
+      "worst": {
+        "U": 174,
+        "D": -199,
+        "L": 123
+      },
+      "predicted_value": 174,
+      "choices": {
+        "U": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "U",
+          "aborted": 0
+        }
+      },
+      "nodes": 6
+    },
+    {
+      "id": "corner/state-000",
+      "depth": 1,
+      "value": -35,
+      "worst": {
+        "U": -36,
+        "D": -36,
+        "L": -35
+      },
+      "predicted_value": -35,
+      "choices": {
+        "U": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        }
+      },
+      "nodes": 8
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-926174898__rot-0__t599",
+      "depth": 1,
+      "value": -439,
+      "worst": {
+        "U": -439,
+        "L": -439,
+        "R": -439
+      },
+      "predicted_value": -439,
+      "choices": {
+        "U": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 6
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-657045523__rot-0__t599",
+      "depth": 1,
+      "value": -1490,
+      "worst": {
+        "D": -1490,
+        "L": -1490,
+        "R": -1490
+      },
+      "predicted_value": -1490,
+      "choices": {
+        "D": {
+          "chosen": "D",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 6
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-168018311__rot-1__t599",
+      "depth": 1,
+      "value": -134,
+      "worst": {
+        "U": -134,
+        "L": -174,
+        "R": -174
+      },
+      "predicted_value": -134,
+      "choices": {
+        "U": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "U",
+          "aborted": 0
+        }
+      },
+      "nodes": 6
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-685290746__rot-1__t599",
+      "depth": 1,
+      "value": -420,
+      "worst": {
+        "U": -640,
+        "D": -640,
+        "L": -420
+      },
+      "predicted_value": -420,
+      "choices": {
+        "U": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        }
+      },
+      "nodes": 8
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-926174898__rot-0__t598",
+      "depth": 2,
+      "value": -437,
+      "worst": {
+        "U": -439,
+        "D": -783,
+        "R": -437
+      },
+      "predicted_value": -437,
+      "choices": {
+        "U": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 33
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-657045523__rot-0__t598",
+      "depth": 2,
+      "value": -1490,
+      "worst": {
+        "D": -1490,
+        "L": -1490,
+        "R": -1490
+      },
+      "predicted_value": -1490,
+      "choices": {
+        "D": {
+          "chosen": "D",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 23
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-168018311__rot-1__t598",
+      "depth": 2,
+      "value": -134,
+      "worst": {
+        "U": -134,
+        "L": -174,
+        "R": -174
+      },
+      "predicted_value": -134,
+      "choices": {
+        "U": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "U",
+          "aborted": 0
+        }
+      },
+      "nodes": 25
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-685290746__rot-1__t598",
+      "depth": 2,
+      "value": -420,
+      "worst": {
+        "U": -640,
+        "D": -640,
+        "L": -420
+      },
+      "predicted_value": -420,
+      "choices": {
+        "U": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        }
+      },
+      "nodes": 37
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-926174898__rot-0__t597",
+      "depth": 3,
+      "value": -437,
+      "worst": {
+        "U": -441,
+        "D": -783,
+        "R": -437
+      },
+      "predicted_value": -437,
+      "choices": {
+        "U": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "R",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 184
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-657045523__rot-0__t597",
+      "depth": 3,
+      "value": -1490,
+      "worst": {
+        "D": -1490,
+        "L": -1490,
+        "R": -1490
+      },
+      "predicted_value": -1490,
+      "choices": {
+        "D": {
+          "chosen": "D",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "R",
+          "aborted": 0
+        }
+      },
+      "nodes": 76
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__opus__seed-168018311__rot-1__t597",
+      "depth": 3,
+      "value": -134,
+      "worst": {
+        "U": -134,
+        "L": -174,
+        "R": -174
+      },
+      "predicted_value": -134,
+      "choices": {
+        "U": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "U",
+          "aborted": 0
+        },
+        "R": {
+          "chosen": "U",
+          "aborted": 0
+        }
+      },
+      "nodes": 86
+    },
+    {
+      "id": "terminal/conqueror_v1_dev20__community__seed-685290746__rot-1__t597",
+      "depth": 3,
+      "value": -420,
+      "worst": {
+        "U": -640,
+        "D": -640,
+        "L": -420
+      },
+      "predicted_value": -420,
+      "choices": {
+        "U": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "D": {
+          "chosen": "L",
+          "aborted": 0
+        },
+        "L": {
+          "chosen": "L",
+          "aborted": 0
+        }
+      },
+      "nodes": 140
+    }
+  ],
+  "failure_details": []
+}

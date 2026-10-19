@@ -1,0 +1,11 @@
+{
+  "author": "chen-006",
+  "github": "chen-006",
+  "name": "穹界喵",
+  "description": "精确闭环收益与不规则返航搜索，结合安全归家、复活拦截和终盘对抗搜索。",
+  "written_by": "ai",
+  "model": "gpt-6-astra",
+  "tool": "ChatGPT",
+  "based_on": "community/land/mohen2006__land-gpt-61-sol; land/bots/sonnet-5@claude-code#1; land/bots/gpt-6-astra@codex#1; land/bots/opus-5.5@claude-code#1",
+  "license": "MIT"
+}
