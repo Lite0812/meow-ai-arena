@@ -989,6 +989,10 @@ public:
     }
 
     Path forcedCutPath(int victim) {
+        if (victim < 0 || victim >= players || victim == me || !p[victim].length) return {};
+        const bool duelOwnApproach = players == 2 && teleportPhase == 2
+            && !p[me].length && idle[victim] < 3 && enemyHome[victim] >= 2
+            && turns - turn >= 2;
         int q[MAX_CELLS], a = 0, b = 0, start = p[me].pos;
         int dist[MAX_CELLS], par[MAX_CELLS], pd[MAX_CELLS];
         std::fill(dist, dist + cells, INF); dist[start] = 0;
@@ -997,7 +1001,19 @@ public:
             int v = next[start][d];
             if (v < 0 || trail[v] == me) continue;
             if (trail[v] == victim) return Path{d};
-            if (collision(d)) continue;
+            if (collision(d)) {
+                bool finishNext = false;
+                if (duelOwnApproach && owner[v] == me) {
+                    // A first-step head collision kills the duel victim too.
+                    // Otherwise we stay home with no exposed line; the victim
+                    // cannot close yet, and a legal next step cuts its old line.
+                    for (int z = 0; z < 4; ++z) if (z != (d ^ 1)) {
+                        int k = next[v][z];
+                        if (k >= 0 && trail[k] == victim) finishNext = true;
+                    }
+                }
+                if (!finishNext) continue;
+            }
             dist[v] = 1; par[v] = start; pd[v] = d; q[b++] = v;
         }
         while (a < b) {

@@ -1,0 +1,823 @@
+{
+  "passed": true,
+  "expectation": "legacy",
+  "real_states": 2,
+  "control_cases": 18,
+  "oracle_step_calls": 18,
+  "oracle_terminal_branches": 14,
+  "failures": 0,
+  "source": "/workspace/scratch/95e97da70795/arena/land/workspace/submission/bot.cpp",
+  "engine": "/workspace/scratch/95e97da70795/arena/land/workspace/engine/game.py",
+  "sha256": {
+    "source": "389ca4968e245f417b2137a32fcfd12bc74e03d790296934fb768455601ab06d",
+    "engine": "ece554e42b7536d36d845d77da6c03a1f4f9f5adb24cb43fd027e9104bd4d908",
+    "fixtures": "ebc503c73350b5dd98a8e77416901452dae8da63d0949bcad2297c0d2ee3fa44",
+    "probe": "984f66d455c60e7d9830cbd57fa8885a7c365b6f9424806310dadfdbea3101a3"
+  },
+  "engine_sha256_when_fixtures_packed": "ece554e42b7536d36d845d77da6c03a1f4f9f5adb24cb43fd027e9104bd4d908",
+  "scope": "Original Game.step checks two real states. Model-field controls check admission boundaries; no full games or win-rate claims.",
+  "observed": [
+    {
+      "id": "sonnet-846672398-r1-t236",
+      "controls": 9,
+      "observed_path": "URDD"
+    },
+    {
+      "id": "sonnet-846672398-r1-t237",
+      "controls": 9,
+      "observed_path": "URDD"
+    }
+  ],
+  "trials": [
+    {
+      "id": "sonnet-846672398-r1-t236",
+      "trials": [
+        {
+          "name": "real",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "phase-0",
+          "path": "URDD",
+          "players": 2,
+          "phase": 0,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "phase-1",
+          "path": "URDD",
+          "players": 2,
+          "phase": 1,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "n4",
+          "path": "URDD",
+          "players": 4,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "own-line",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 1,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "first-nonown",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": -1
+        },
+        {
+          "name": "home-1",
+          "path": "",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 1,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "last-1",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 1,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "first-reverse",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 44,
+          "victim_idle": 0,
+          "enemy_home": 20,
+          "remaining": 364,
+          "first_legal": 0,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "victim-cleared",
+          "path": "",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 0,
+          "victim_idle": 0,
+          "enemy_home": 0,
+          "remaining": 364,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        }
+      ]
+    },
+    {
+      "id": "sonnet-846672398-r1-t237",
+      "trials": [
+        {
+          "name": "real",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "phase-0",
+          "path": "URDD",
+          "players": 2,
+          "phase": 0,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "phase-1",
+          "path": "URDD",
+          "players": 2,
+          "phase": 1,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "n4",
+          "path": "URDD",
+          "players": 4,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "own-line",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 1,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "first-nonown",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": -1
+        },
+        {
+          "name": "home-1",
+          "path": "",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 1,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "last-1",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 1,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "first-reverse",
+          "path": "URDD",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 45,
+          "victim_idle": 0,
+          "enemy_home": 19,
+          "remaining": 363,
+          "first_legal": 0,
+          "first_collision": 1,
+          "first_owner": 1
+        },
+        {
+          "name": "victim-cleared",
+          "path": "",
+          "players": 2,
+          "phase": 2,
+          "own_length": 0,
+          "victim": 0,
+          "victim_length": 0,
+          "victim_idle": 0,
+          "enemy_home": 0,
+          "remaining": 363,
+          "first_legal": 1,
+          "first_collision": 1,
+          "first_owner": 1
+        }
+      ]
+    }
+  ],
+  "oracle_matrices": [
+    {
+      "id": "sonnet-846672398-r1-t236",
+      "route": "DR",
+      "first_steps": [
+        {
+          "moves": [
+            "U",
+            "D"
+          ],
+          "events": [],
+          "dead": [
+            false,
+            false
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              19,
+              35
+            ],
+            [
+              18,
+              36
+            ]
+          ]
+        },
+        {
+          "moves": [
+            "L",
+            "D"
+          ],
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "head",
+              "by": 1
+            },
+            {
+              "type": "death",
+              "player": 1,
+              "reason": "head",
+              "by": 0
+            }
+          ],
+          "dead": [
+            true,
+            true
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              21,
+              4
+            ],
+            [
+              18,
+              35
+            ]
+          ]
+        },
+        {
+          "moves": [
+            "R",
+            "D"
+          ],
+          "events": [],
+          "dead": [
+            false,
+            false
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              20,
+              36
+            ],
+            [
+              18,
+              36
+            ]
+          ]
+        }
+      ],
+      "terminal_branches": [
+        {
+          "moves": [
+            [
+              "U",
+              "D"
+            ],
+            [
+              "U",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "U",
+              "D"
+            ],
+            [
+              "L",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "U",
+              "D"
+            ],
+            [
+              "R",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "L",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": true
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "D"
+            ],
+            [
+              "U",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "D"
+            ],
+            [
+              "D",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "D"
+            ],
+            [
+              "R",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sonnet-846672398-r1-t237",
+      "route": "RD",
+      "first_steps": [
+        {
+          "moves": [
+            "U",
+            "R"
+          ],
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "head",
+              "by": 1
+            },
+            {
+              "type": "death",
+              "player": 1,
+              "reason": "head",
+              "by": 0
+            }
+          ],
+          "dead": [
+            true,
+            true
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              21,
+              4
+            ],
+            [
+              18,
+              35
+            ]
+          ]
+        },
+        {
+          "moves": [
+            "L",
+            "R"
+          ],
+          "events": [],
+          "dead": [
+            false,
+            false
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              18,
+              35
+            ],
+            [
+              19,
+              34
+            ]
+          ]
+        },
+        {
+          "moves": [
+            "R",
+            "R"
+          ],
+          "events": [],
+          "dead": [
+            false,
+            false
+          ],
+          "areas": [
+            414,
+            885
+          ],
+          "pos": [
+            [
+              20,
+              35
+            ],
+            [
+              19,
+              34
+            ]
+          ]
+        }
+      ],
+      "terminal_branches": [
+        {
+          "moves": [
+            [
+              "U",
+              "R"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": true
+        },
+        {
+          "moves": [
+            [
+              "L",
+              "R"
+            ],
+            [
+              "U",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "L",
+              "R"
+            ],
+            [
+              "D",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "L",
+              "R"
+            ],
+            [
+              "L",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "R"
+            ],
+            [
+              "U",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "R"
+            ],
+            [
+              "D",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        },
+        {
+          "moves": [
+            [
+              "R",
+              "R"
+            ],
+            [
+              "R",
+              "D"
+            ]
+          ],
+          "victim_dead": true,
+          "mine_dead": false,
+          "events": [
+            {
+              "type": "death",
+              "player": 0,
+              "reason": "cut",
+              "by": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "failure_details": [],
+  "elapsed_seconds": 2.374
+}

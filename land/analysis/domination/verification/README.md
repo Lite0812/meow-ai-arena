@@ -51,3 +51,20 @@ The reports include the tested source SHA256, original engine SHA256, fixture an
 ## Scope
 
 These tests validate the modeled mechanics and the endgame search's small-depth values, tie behavior, and timeout fallback. They do not validate all strategic forecasts, all possible boards, full-match runtime behavior, or an 80% win-rate target. Those claims require separate benchmark results for the exact same source hash.
+
+## TP approach regression
+
+The optional TP regression adds `verify_tp_approach.py`, `tp_approach_probe.cpp`, and `tp_approach_fixtures.json` to the seven files above. It imports the existing mechanics runner's fixture helpers. These three files contain the full test inputs; neither historical replays nor the separate audit report is a runtime dependency.
+
+Run the following from the repository root when the full-match benchmark is idle:
+
+```bash
+python3 land/analysis/domination/verification/verify_tp_approach.py --expect legacy --out land/analysis/domination/verification/tp_legacy_report.json
+python3 land/analysis/domination/verification/verify_tp_approach.py --bot land/analysis/domination/candidate_tp_own_approach.cpp --out land/analysis/domination/verification/tp_patched_report.json
+```
+
+The first command uses the default `submission/bot.cpp` and expects the frozen 389 behavior: both real states begin with U and miss the immediate two-step approach. Use it before replacing that legacy submission, or pass `--bot` with its frozen source. The default expectation for the second command is `patched`, which requires the complete routes DR and RD. A later final submission containing the patch can be checked without `--bot`.
+
+The adapter calls only `fields`, spawn preparation, and `forcedCutPath`; it does not call `decide` or run games. It checks two real snapshots and nine disabled-condition controls per snapshot: phase 0, phase 1, four players on a 48×48 board, an existing own trail, a non-owned first cell, enemy home distance 1, one remaining turn, an illegal reversing first move, and a cleared victim trail. The controls mutate only the relevant model inputs; they do not claim to simulate all future enemy choices. Invalid victim IDs are not sent to the legacy implementation, which lacks that public-API guard.
+
+The Python runner independently recomputes the two real-state guarantees with the original `Game.step`: 18 steps across 14 early-terminated branches, all of which must kill the target within two moves. It compares the full recorded first-step and terminal branch results. Source, engine, fixture, and probe hashes are written to the report. This regression checks the narrow TP admission rule; it makes no win-rate claim.
